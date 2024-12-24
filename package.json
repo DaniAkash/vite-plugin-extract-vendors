@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-extract-vendors",
   "version": "0.0.1",
-  "description": "Rewrite imports with esm.sh at build time",
+  "description": "A vite plugin to extract external libraries from node_modules to vendors directory to improve caching of 3rd party js files",
   "source": "index.ts",
   "main": "./dist/index.cjs",
   "module": "./dist/index.module.js",
@@ -22,7 +22,8 @@
   },
   "keywords": [
     "vite-plugin",
-    "esm.sh"
+    "vendors",
+    "code-splitting"
   ],
   "files": [
     "dist/",
