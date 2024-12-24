@@ -1,0 +1,42 @@
+{
+  "name": "vite-plugin-extract-vendors",
+  "version": "0.0.1",
+  "description": "Rewrite imports with esm.sh at build time",
+  "source": "index.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.module.js",
+    "types": "./dist/index.d.ts"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniakash/vite-plugin-extract-vendors.git"
+  },
+  "keywords": [
+    "vite-plugin",
+    "esm.sh"
+  ],
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "author": "DaniAkash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniakash/vite-plugin-extract-vendors/issues"
+  },
+  "homepage": "https://github.com/daniakash/vite-plugin-extract-vendors#readme",
+  "devDependencies": {
+    "microbundle": "^0.15.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
